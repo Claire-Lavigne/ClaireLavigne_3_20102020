@@ -1,0 +1,23 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: $ff-base;
+  font-size: $fs-base;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $ff-alt;
+}
