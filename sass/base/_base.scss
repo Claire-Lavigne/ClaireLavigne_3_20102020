@@ -5,6 +5,7 @@
   font-family: $ff-base;
   font-size: $fs-base;
   margin: 0;
+  border: 0;
 }
 
 .logo,
@@ -12,6 +13,11 @@ h1,
 h2,
 h3 {
   font-family: $ff-alt;
+}
+
+h2 {
+  display: block;
+  text-align: left;
 }
 
 a {

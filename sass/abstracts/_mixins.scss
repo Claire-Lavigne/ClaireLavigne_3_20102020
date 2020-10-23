@@ -3,3 +3,10 @@
   background: url("{$image}") cover no-repeat;
 };
 */
+
+@mixin flexbox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
