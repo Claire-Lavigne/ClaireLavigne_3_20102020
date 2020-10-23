@@ -1,0 +1,39 @@
+// heart
+i.fa-heart {
+  position: relative;
+  height: 45px;
+  width: 150px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #383736;
+  outline: 0;
+  overflow: hidden;
+  background: none;
+  z-index: 100;
+  cursor: pointer;
+  transition: all 1s ease-in;
+
+  &:hover {
+    color: red;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    background: red;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+  }
+
+  &:hover:before {
+    top: 0;
+  }
+}
+/*
+.fill:before {
+  -webkit-transition: top 1s ease-in;
+}
+*/
