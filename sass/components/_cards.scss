@@ -3,6 +3,7 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 h2 {
@@ -11,19 +12,44 @@ h2 {
 
 .card {
   margin: 2em;
-  width: 350px;
   height: 350px;
   overflow: hidden;
   border: none;
   border-radius: 10px;
+
+  box-shadow: 0 0 10px rgba(33, 33, 33, 0.2);
+  transition: box-shadow 0.3s;
+  background: white;
+  margin: 20px 10px;
+  &:hover {
+    box-shadow: 2px 2px 12px rgba(61, 40, 40, 0.4);
+  }
   .img-wrapper {
-    width: 350px;
-    height: 350px;
+    height: 150px;
+    width: 100%;
+    margin: 0;
     object-fit: cover;
-    img {
-      width: 100%;
-      height: 100%;
-      height: auto;
-    }
+  }
+  img {
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+  }
+  .text-wrapper {
+    padding: 0.5em 1em;
   }
 }
+/*
+.delice {
+  @include bgd-img($img-delice);
+}
+.palette {
+  @include bgd-img($img-palette);
+}
+.francaise {
+  @include bgd-img($img-francaise);
+}
+.note {
+  @include bgd-img($img-note);
+}
+*/

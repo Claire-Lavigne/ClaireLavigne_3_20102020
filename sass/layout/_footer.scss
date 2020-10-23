@@ -1,0 +1,18 @@
+footer {
+  background: $clr-alt-dk;
+  padding: 1.5em;
+  .brand img {
+    height: 20px;
+    display: block;
+    filter: invert(1);
+    margin-bottom: 0.8em;
+  }
+  a {
+    color: white;
+    display: block;
+    padding: 0.3em;
+  }
+  i {
+    padding-right: 0.5em;
+  }
+}
