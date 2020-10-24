@@ -1,12 +1,19 @@
-/*
 @mixin bgd-img($image) {
-  background: url("{$image}") cover no-repeat;
-};
-*/
+  background-image: url($image);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 @mixin flexbox {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin center {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
