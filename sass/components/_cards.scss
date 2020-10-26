@@ -44,11 +44,9 @@
     &__infos {
       padding: 0.5em 1em;
     }
-    &__text {
-      float: left;
-    }
-    &__icon {
-      float: right;
+    h3,
+    p {
+      padding-top: 0.2em;
     }
   }
   .palette {

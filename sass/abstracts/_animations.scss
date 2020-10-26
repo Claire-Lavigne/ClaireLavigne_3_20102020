@@ -11,46 +11,71 @@
   }
 }
 
-@keyframes heart {
-  0% {
-    background-position: 2800px 0;
-  }
-  100% {
-    background-position: -2800px 0;
-  }
-}
-
 // heart
-
 .far.fa-heart {
   cursor: pointer;
-  font-size: 20px;
+  font-size: 24px;
   position: absolute;
-  right: 10px;
-  bottom: 10px;
+  right: 20px;
+  bottom: 27.5px;
   z-index: 5;
   overflow: hidden;
+  &:hover + .heart--hidden {
+    bottom: 50px;
+  }
+  /*
+  &:hover {
+    transition: color 1s ease;
+    color: transparent;
+  }
+  */
 }
 
-.fa-heart--hidden {
+.heart--hidden {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  right: 10px;
-  bottom: 10px;
-  background:white;
+  width: 24px;
+  height: 24px;
+  right: 20px;
+  bottom: 27.5px;
+  background: white;
   transition: all 0.3s ease;
   z-index: 2;
 }
 
-.fas.fa-heart {
-  font-size: 20px;
+.heart {
   position: absolute;
-  right: 10px;
-  bottom: 10px;
-  color: red;
-}
-
-.far.fa-heart:hover + .fa-heart--hidden {
-  bottom: 30px;
+  right: 20px;
+  bottom: 27.5px;
+  width: 24px;
+  height: 24px;
+  -webkit-mask: radial-gradient(
+        circle at 60% 65%,
+        $clr-primary 64%,
+        transparent 65%
+      )
+      top left,
+    radial-gradient(circle at 40% 65%, $clr-primary 64%, transparent 65%) top
+      right,
+    linear-gradient(to bottom left, $clr-primary 43%, transparent 43%) bottom
+      left,
+    linear-gradient(to bottom right, $clr-primary 43%, transparent 43%) bottom
+      right;
+  -webkit-mask-size: 50% 50%;
+  -webkit-mask-repeat: no-repeat;
+  mask: radial-gradient(circle at 60% 65%, $clr-primary 64%, transparent 65%)
+      top left,
+    radial-gradient(circle at 40% 65%, $clr-primary 64%, transparent 65%) top
+      right,
+    linear-gradient(to bottom left, $clr-primary 43%, transparent 43%) bottom
+      left,
+    linear-gradient(to bottom right, $clr-primary 43%, transparent 43%) bottom
+      right;
+  mask-size: 50% 50%;
+  mask-repeat: no-repeat;
+  background: linear-gradient($clr-primary, $clr-secondary);
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
 }
