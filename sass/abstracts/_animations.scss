@@ -14,68 +14,39 @@
 // heart
 .far.fa-heart {
   cursor: pointer;
-  font-size: 24px;
+  font-size: 20px;
   position: absolute;
-  right: 20px;
-  bottom: 27.5px;
+  right: 10px;
+  bottom: 10px;
   z-index: 5;
   overflow: hidden;
-  &:hover + .heart--hidden {
-    bottom: 50px;
-  }
-  /*
   &:hover {
-    transition: color 1s ease;
+    transition: color 0.5s ease;
     color: transparent;
   }
-  */
+  &:hover + .box-hidden {
+    bottom: 30px;
+  }
 }
 
-.heart--hidden {
+.box-hidden {
   position: absolute;
-  width: 24px;
-  height: 24px;
-  right: 20px;
-  bottom: 27.5px;
-  background: white;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  bottom: 10px;
+  background:white;
   transition: all 0.3s ease;
   z-index: 2;
 }
 
-.heart {
+.fas.fa-heart {
+  font-size: 20px;
   position: absolute;
-  right: 20px;
-  bottom: 27.5px;
-  width: 24px;
-  height: 24px;
-  -webkit-mask: radial-gradient(
-        circle at 60% 65%,
-        $clr-primary 64%,
-        transparent 65%
-      )
-      top left,
-    radial-gradient(circle at 40% 65%, $clr-primary 64%, transparent 65%) top
-      right,
-    linear-gradient(to bottom left, $clr-primary 43%, transparent 43%) bottom
-      left,
-    linear-gradient(to bottom right, $clr-primary 43%, transparent 43%) bottom
-      right;
-  -webkit-mask-size: 50% 50%;
-  -webkit-mask-repeat: no-repeat;
-  mask: radial-gradient(circle at 60% 65%, $clr-primary 64%, transparent 65%)
-      top left,
-    radial-gradient(circle at 40% 65%, $clr-primary 64%, transparent 65%) top
-      right,
-    linear-gradient(to bottom left, $clr-primary 43%, transparent 43%) bottom
-      left,
-    linear-gradient(to bottom right, $clr-primary 43%, transparent 43%) bottom
-      right;
-  mask-size: 50% 50%;
-  mask-repeat: no-repeat;
-  background: linear-gradient($clr-primary, $clr-secondary);
-  &::before {
-    content: "";
-    display: block;
-    padding-top: 100%;
-  }
+  right: 10px;
+  bottom: 10px;
+  background: linear-gradient(to top, $clr-secondary, $clr-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
