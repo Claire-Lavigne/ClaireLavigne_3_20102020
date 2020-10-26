@@ -28,13 +28,16 @@
       object-fit: cover;
     }
     &__tag {
+      @include center;
       position: absolute;
+      font-size: 0.9em;
+      font-weight: 500 !important;
       top: 15px;
       right: 15px;
       border-radius: 3px;
       font-weight: bold;
       color: $clr-tertiary-dk;
-      height: 50px;
+      height: 30px;
       width: 80px;
       background: $clr-tertiary;
     }
@@ -59,5 +62,6 @@
   }
   .note {
     @include bgd-img($img-note);
+   background-position: 0 -120px;
   }
 }

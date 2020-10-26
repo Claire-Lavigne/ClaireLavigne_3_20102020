@@ -20,25 +20,37 @@
   }
 }
 
-/*
-.fa-heart {
-  
-}
-*/
 // heart
-.like-btn-svg {
-  width: 80px;
-  height: 100px;
-  position: absolute;
-  left: 25px;
-  bottom: -112px;
-  background: url(https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png) no-repeat;
-  background-position: 0 0;
+
+.far.fa-heart {
   cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 5;
+  overflow: hidden;
 }
 
-.like-btn-svg:hover {
-  background-position: -2800px 0;
-  transition: background 3s steps(28);
+.fa-heart--hidden {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  bottom: 10px;
+  background:white;
+  transition: all 0.3s ease;
+  z-index: 2;
 }
 
+.fas.fa-heart {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: red;
+}
+
+.far.fa-heart:hover + .fa-heart--hidden {
+  bottom: 30px;
+}
