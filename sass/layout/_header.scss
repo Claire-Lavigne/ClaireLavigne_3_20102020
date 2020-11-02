@@ -1,7 +1,11 @@
 header {
+  position: relative;
+  box-shadow: $shadow;
+  z-index: 2;
   .brand img {
-    width: 180px;
+    width: 200px;
     display: block;
-    margin: 1em auto;
+    margin: 0 auto;
+    padding: 1em;
   }
 }

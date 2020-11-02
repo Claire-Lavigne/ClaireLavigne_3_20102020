@@ -2,6 +2,7 @@
   box-sizing: border-box;
   font-family: $ff-base;
   font-size: $fs-base;
+  color: $ff-clr;
   margin: 0;
   border: 0;
 }
@@ -25,7 +26,7 @@ h2 {
   display: block;
   text-align: left;
   font-size: 26px;
-  margin: 0.5em 0;
+  padding: 1em 0 0; 
 }
 
 h3 {
@@ -33,6 +34,5 @@ h3 {
 }
 
 a {
-  color: black;
   text-decoration: none;
 }

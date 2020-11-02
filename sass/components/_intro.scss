@@ -1,20 +1,29 @@
 .intro {
   @include center;
-  margin: 2em;
-  background: $clr-alt-lt;
+  position: relative;
+  padding: 2em 0;
+  background: lighten($clr-alt, 10%);
+  text-align: center;
   &__city {
-    color: $clr-alt-dk;
+    position: absolute;
     background: $clr-alt;
     padding: 1em;
     width: 100%;
     text-align: center;
     font-weight: bold;
+    top: 0;
     i {
       padding-right: 1em;
+      font-size: 20px;
     }
+  }
+  &__title {
+    font-weight: 800;
+    padding-top: 2em;
   }
   &__text {
     font-size: 20px;
     font-weight: 300;
+    padding: 0 1em;
   }
 }

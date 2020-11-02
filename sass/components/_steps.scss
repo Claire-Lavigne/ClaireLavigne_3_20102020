@@ -1,0 +1,58 @@
+.steps {
+  padding: 2em 1em;
+  @media (min-width: $computers) {
+    @include flexbox;
+    margin: 1em 0;
+  }
+  &__title {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  &__item {
+    @include flexbox;
+    position: relative;
+    width: 270px;
+    height: 75px;
+    padding: 1em;
+    background: lighten($clr-alt, 10%);
+    border-radius: 20px;
+    box-shadow: $shadow;
+    margin: 2em auto;
+    &:hover {
+      background: lighten($clr-primary, 35%);
+      i {
+        color: $clr-primary;
+      }
+    }
+    @media (min-width: $tablets) {
+      width: 80%;
+    }
+    @media (min-width: $computers) {
+      width: 300px;
+      @include center;
+    }
+  }
+  &__number {
+    color: white;
+    background: $clr-primary;
+    padding: 5px 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: -15px;
+    @media (min-width: $computers) {
+      top: -15px;
+      margin: auto;
+      left: unset;
+    }
+  }
+  &__icon {
+    color: darken($clr-alt, 40%);
+    font-size: 20px;
+    margin: 0 1em;
+  }
+  &__subtitle {
+    @media (min-width: $computers) {
+      padding: 1em;
+    }
+  }
+}
