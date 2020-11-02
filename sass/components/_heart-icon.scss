@@ -7,11 +7,13 @@
   bottom: 10px;
   z-index: 5;
   overflow: hidden;
-  &:hover:not(.menu .fa-heart) {
+  // &:hover:not(.menu .fa-heart) {
+  &:hover {
     transition: color 0.5s ease;
     color: transparent;
   }
-  &:hover:not(.menu .fa-heart) + .box-hidden {
+  // &:hover:not(.menu .fa-heart) + .box-hidden {
+  &:hover + .box-hidden {
     bottom: 30px;
   }
 }
@@ -23,7 +25,7 @@
   height: 20px;
   right: 10px;
   bottom: 10px;
-  background:white;
+  background: white;
   transition: all 0.3s ease;
   z-index: 2;
 }
@@ -41,6 +43,7 @@
 }
 
 // menu simple heart
+/*
 .menu .fa-heart {
   position: absolute;
   top: 1.5em;
@@ -49,3 +52,4 @@
   height: 30px;
   cursor: default;
 }
+*/
