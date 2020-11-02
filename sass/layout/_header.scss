@@ -1,11 +1,13 @@
 header {
+  @include flexbox;
   position: relative;
   box-shadow: $shadow;
-  z-index: 2;
+  padding: 1em;
+  z-index: 1;
+  i {
+    margin-right: 2em;
+  }
   .brand img {
-    width: 200px;
-    display: block;
-    margin: 0 auto;
-    padding: 1em;
+    width: 180px;
   }
 }

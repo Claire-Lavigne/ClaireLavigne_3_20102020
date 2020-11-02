@@ -7,6 +7,10 @@
   &__title {
     width: 100%;
     margin-bottom: 1em;
+    display: block;
+    text-align: left;
+    font-size: 26px;
+    padding: 1em 0 0;
   }
   &__item {
     @include flexbox;
@@ -51,6 +55,7 @@
     margin: 0 1em;
   }
   &__subtitle {
+    font-weight: 600;
     @media (min-width: $computers) {
       padding: 1em;
     }

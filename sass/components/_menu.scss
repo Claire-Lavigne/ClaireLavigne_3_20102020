@@ -1,0 +1,72 @@
+.menu {
+  position: relative;
+  top: -50px;
+  z-index: 10;
+  padding: 1.5em 1em 4em;
+  border-radius: 40px 40px 0 0;
+  background: lighten($clr-alt, 10%);
+  &__name {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: $ff-alt;
+  }
+  &__type {
+    margin: 2em 0 1em;
+    padding: 2px 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 35px;
+    border-bottom: 2px solid $clr-tertiary;
+  }
+  &__meal {
+    position: relative;
+    max-width: 350px;
+    height: 60px;
+    padding: 0.5em;
+    background: white;
+    border-radius: 15px;
+    box-shadow: $shadow;
+    margin: 1em auto;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover .menu__title,
+    &:hover .menu__text {
+      transition: all 2s ease;
+      white-space: nowrap;
+      width: 200px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &:hover .menu__icon {
+      transition: right 0.5s ease;
+      right: 0;
+    }
+    &:hover .menu__price {
+      transition: right 0.5s ease;
+      right: 70px;
+    }
+  }
+  &__title,
+  &__text {
+    padding: 2px 0;
+  }
+  &__price {
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+  }
+  &__icon {
+    @include flexbox;
+    position: absolute;
+    right: -50px;
+    top: 0;
+    border-radius: 0 15px 15px 0;
+    background: $clr-tertiary;
+    width: 50px;
+    height: 100%;
+    i {
+      color: white;
+    }
+  }
+}

@@ -2,6 +2,15 @@
   padding: 2em 1em 4em;
   margin: auto;
   background: lighten($clr-alt, 10%);
+  h2 {
+    display: block;
+    text-align: left;
+    font-size: 26px;
+    padding: 1em 0 0;
+  }
+  h3 {
+    font-weight: 600;
+  }
   .cards {
     @include flexbox;
     margin: auto;
@@ -53,18 +62,5 @@
       position: absolute;
       right: 10px;
     }
-  }
-  .palette {
-    @include bgd-img($img-palette);
-  }
-  .delice {
-    @include bgd-img($img-delice);
-  }
-  .francaise {
-    @include bgd-img($img-francaise);
-  }
-  .note {
-    @include bgd-img($img-note);
-    background-position: 0 -120px;
   }
 }

@@ -7,11 +7,11 @@
   bottom: 10px;
   z-index: 5;
   overflow: hidden;
-  &:hover {
+  &:hover:not(.menu .fa-heart) {
     transition: color 0.5s ease;
     color: transparent;
   }
-  &:hover + .box-hidden {
+  &:hover:not(.menu .fa-heart) + .box-hidden {
     bottom: 30px;
   }
 }
@@ -38,4 +38,14 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+// menu simple heart
+.menu .fa-heart {
+  position: absolute;
+  top: 1.5em;
+  left: 270px;
+  width: 30px;
+  height: 30px;
+  cursor: default;
 }
