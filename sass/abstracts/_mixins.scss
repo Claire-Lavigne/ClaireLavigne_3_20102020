@@ -5,16 +5,22 @@
   background-repeat: no-repeat;
 }
 
-@mixin flexbox {
+@mixin flexbox($direction: row, $wrap: wrap) {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: $direction $wrap;
   justify-content: center;
   align-items: center;
 }
 
-@mixin center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@mixin tablets {
+  @media (min-width: 768px) {
+    @content;
+  }
 }
+
+@mixin computers {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+

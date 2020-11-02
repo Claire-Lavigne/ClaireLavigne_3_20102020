@@ -1,5 +1,5 @@
 .intro {
-  @include center;
+  @include flexbox($direction: column, $wrap: nowrap);
   position: relative;
   padding: 2em 0;
   background: lighten($clr-alt, 10%);

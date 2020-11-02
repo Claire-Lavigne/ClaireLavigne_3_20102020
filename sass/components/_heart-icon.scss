@@ -7,12 +7,10 @@
   bottom: 10px;
   z-index: 5;
   overflow: hidden;
-  // &:hover:not(.menu .fa-heart) {
   &:hover {
     transition: color 0.5s ease;
     color: transparent;
   }
-  // &:hover:not(.menu .fa-heart) + .box-hidden {
   &:hover + .box-hidden {
     bottom: 30px;
   }

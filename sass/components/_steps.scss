@@ -1,9 +1,5 @@
 .steps {
   padding: 2em 1em;
-  @media (min-width: $computers) {
-    @include flexbox;
-    margin: 1em 0;
-  }
   &__title {
     width: 100%;
     margin-bottom: 1em;
@@ -15,7 +11,7 @@
   &__item {
     @include flexbox;
     position: relative;
-    width: 270px;
+    max-width: 325px;
     height: 75px;
     padding: 1em;
     background: lighten($clr-alt, 10%);
@@ -28,13 +24,6 @@
         color: $clr-primary;
       }
     }
-    @media (min-width: $tablets) {
-      width: 80%;
-    }
-    @media (min-width: $computers) {
-      width: 300px;
-      @include center;
-    }
   }
   &__number {
     color: white;
@@ -43,11 +32,6 @@
     border-radius: 50%;
     position: absolute;
     left: -15px;
-    @media (min-width: $computers) {
-      top: -15px;
-      margin: auto;
-      left: unset;
-    }
   }
   &__icon {
     color: darken($clr-alt, 40%);
@@ -56,8 +40,36 @@
   }
   &__subtitle {
     font-weight: 600;
-    @media (min-width: $computers) {
+  }
+}
+
+// Breakpoint
+@include computers {
+
+  .steps {
+    @include flexbox;
+    margin: 1em 0;
+
+    &__item {
+      height: 115px;
+      margin: 1em 2em;
+      @include flexbox($direction: column, $wrap: nowrap);
+    }
+
+    &__number {
+      top: -15px;
+      margin: auto;
+      left: unset;
+    }
+
+    &__icon {
+      top: 10px;
+      position: relative;
+    }
+
+    &__subtitle {
       padding: 1em;
     }
   }
+
 }
