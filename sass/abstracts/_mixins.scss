@@ -12,11 +12,13 @@
   align-items: center;
 }
 
+/*
 @mixin tablets {
   @media (min-width: 768px) {
     @content;
   }
 }
+*/
 
 @mixin computers {
   @media (min-width: 1024px) {

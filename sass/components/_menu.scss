@@ -16,6 +16,8 @@
   }
   &__name {
     width: 100%;
+    @include flexbox;
+    justify-content: space-between;
     font-size: 20px;
     font-weight: normal;
     font-family: $ff-alt;
@@ -98,7 +100,7 @@
 @include computers {
   .menu {
     &__name {
-      text-align: center;
+      justify-content: center;
     }
     &__content {
       @include flexbox;

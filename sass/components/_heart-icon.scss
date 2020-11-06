@@ -41,13 +41,14 @@
 }
 
 // menu simple heart
-/*
 .menu .fa-heart {
-  position: absolute;
-  top: 1.5em;
-  left: 270px;
-  width: 30px;
-  height: 30px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  margin-left: 1em;
   cursor: default;
+  &:hover {
+    color: unset;
+    opacity: 1;
+  }
 }
-*/
