@@ -41,14 +41,11 @@
 }
 
 // menu simple heart
-.menu .fa-heart {
+.menu__heart {
   position: relative;
-  top: 0;
-  bottom: 0;
-  margin-left: 1em;
-  cursor: default;
-  &:hover {
-    color: unset;
-    opacity: 1;
+  top: 20px;
+  margin-left: 3em;
+  .box-hidden {
+    background: lighten($clr-alt, 10%);
   }
 }
