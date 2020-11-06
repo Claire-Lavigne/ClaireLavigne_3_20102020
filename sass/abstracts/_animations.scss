@@ -1,8 +1,25 @@
-#loading-spinner {
-  animation: loading-spinner 1s linear infinite;
+@keyframes loadingFade {
+  from {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
-@keyframes loading-spinner {
+@keyframes loadingSpinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1080deg);
+  }
+}
+
+@keyframes validationSpinner {
   from {
     transform: rotate(0deg);
   }
@@ -11,7 +28,7 @@
   }
 }
 
-@keyframes fadeIn {
+@keyframes fadeInMenus {
   0% {
     opacity: 0;
 		transform: translateY(40px);

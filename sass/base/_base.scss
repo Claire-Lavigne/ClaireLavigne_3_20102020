@@ -6,9 +6,15 @@
   margin: 0;
   border: 0;
 }
-html,
-body {
-  height: 100%;
+
+html{
+  position:relative;
+  min-height:100%; /* at least as tall as the viewport */
+  width: 100%;
+}
+
+body{
+  height:100%; /* to match the height of the HTML element */
   width: 100%;
 }
 
