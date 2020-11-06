@@ -10,6 +10,7 @@
   }
   &__item {
     @include flexbox;
+    justify-content: flex-start;
     position: relative;
     max-width: 325px;
     height: 75px;
@@ -36,7 +37,7 @@
   &__icon {
     color: darken($clr-alt, 40%);
     font-size: 20px;
-    margin: 0 1em;
+    margin: 0.5em 1em;
   }
   &__subtitle {
     font-weight: 600;
@@ -49,24 +50,20 @@
   .steps {
     @include flexbox;
     margin: 1em 0;
-
     &__item {
       height: 115px;
       margin: 1em 2em;
       @include flexbox($direction: column, $wrap: nowrap);
     }
-
     &__number {
       top: -15px;
       margin: auto;
       left: unset;
     }
-
     &__icon {
       top: 10px;
       position: relative;
     }
-
     &__subtitle {
       padding: 1em;
     }
