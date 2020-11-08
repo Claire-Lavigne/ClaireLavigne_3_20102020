@@ -1,23 +1,23 @@
-*,
-*:before,
-*:after {
+* {
   box-sizing: border-box;
   font-family: $ff-base;
   font-size: $fs-base;
-}
-
-html,
-body {
+  color: $ff-clr;
   margin: 0;
-  padding: 0;
+  border: 0;
 }
 
-.logo,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $ff-alt;
+html{
+  position:relative;
+  min-height:100%; /* at least as tall as the viewport */
+  width: 100%;
+}
+
+body{
+  height:100%; /* to match the height of the HTML element */
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
