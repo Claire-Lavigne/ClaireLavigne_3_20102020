@@ -16,8 +16,7 @@
   }
   &__name {
     width: 100%;
-    @include flexbox;
-    justify-content: space-between;
+    @include flexbox($justify: space-between);
     font-size: 24px;
     font-weight: normal;
     font-family: $ff-alt;
@@ -116,8 +115,7 @@
       justify-content: center;
     }
     &__content {
-      @include flexbox;
-      align-items: flex-start;
+      @include flexbox($align: flex-start);
     }
     section {
       padding: 0 1em;

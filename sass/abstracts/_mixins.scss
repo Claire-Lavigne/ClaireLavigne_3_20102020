@@ -5,11 +5,11 @@
   background-repeat: no-repeat;
 }
 
-@mixin flexbox($direction: row, $wrap: wrap) {
+@mixin flexbox($direction: row, $wrap: wrap, $justify: center, $align: center) {
   display: flex;
   flex-flow: $direction $wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: $justify;
+  align-items: $align;
 }
 
 /*
